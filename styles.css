@@ -11,6 +11,8 @@
   grid-gap: 1em;
 }
 
+
+
 h1 {
   font-family: 'Arimo', sans-serif;
   font-weight: bold;
@@ -33,6 +35,20 @@ h2 {
 
 p {
 
+}
+
+/* homepage blurb */
+p.intro {
+  font-family: 'Sumana', serif;
+  line-height: 1.8em;
+  font-size: 0.8em;
+  padding-left: 16em;
+}
+
+@media screen and (max-width: 479px) {
+  p.intro {
+    font-size: 0.4em;
+  }
 }
 
 p.body {
