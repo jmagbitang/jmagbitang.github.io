@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sumana:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div id="title">
+        <a href="home.html" class="title">joanne<br>magbitang</a>
+      </div>
+
+      <div id="navigation">
+        <ul style="list-style: none;">
+          <!-- design projects -->
+        <li class="nav-title" style="margin-top: -3em;">design</li>
+        <li class="nav-item">
+          <a href="palantir.html" class="navigation navigation-active ">palantir</a>
+        </li>
+        <li class="nav-item-active">
+          <a href="yelp.html" class="navigation navigation-active ">yelp</a>
+        </li>
+        <li class="nav-item">
+          <a href="wealthsimple.html" class="navigation navigation-active ">wealthsimple</a>
+        </li>
+        <li class="nav-item">
+          <a href="hackthenorth.html" class="navigation navigation-active ">hack the north</a>
+        </li>
+
+        <!-- writing -->
+        <li class="nav-title-inactive">writing</li>
+        <li class="nav-item">
+          <a href="https://medium.com/yelp-design/roll-call-intern-edition-joanne-john-ac9b076a67cb" target="_blank" class="navigation-inactive nav-item-inactive">yelp: roll call</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" target="_blank" class="navigation-inactive nav-item-inactive">htn: branding</a>
+        </li>
+
+        <!-- photography -->
+        <li class="nav-title-inactive">photography</li>
+        <li class="nav-item">
+          <a href="#" class="navigation-inactive nav-item-inactive">yashica t3</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="navigation-inactive nav-item-inactive">photo sets</a>
+        </li>
+
+        <!-- CV -->
+        <li class="nav-title-inactive">CV</li>
+        <li class="nav-item">
+          <a href="#" class="navigation-inactive nav-item-inactive">online</a>
+        </li>
+        <li class="nav-item">
+          <a href="images/Resume_JoanneMagbitang_2018.pdf" target="_blank" class="navigation-inactive nav-item-inactive">pdf</a>
+        </li>
+
+        </ul>
+      </div>
+
+      <!-- header photo -->
+      <div class="header-photo">
+        <p class="date">fall 17 - winter 18, san francisco</p>
+        <img class="height100" src="images/yelp-main.png" alt="it me">
+      </div>
+
+      <!-- intro text -->
+      <div class="bodytext">
+        <p class="body" style="margin-top: -1em;">
+          I was a product design intern at Yelp for 8 months on the Reader Experience (ReaderX) team.
+          I mainly worked on business page improvements and redesigning our <b>photo browsing experience</b> on mobile and web (will not be shown) platforms. <br>
+        </p>
+        <h1>context</h1>
+        <p class="body">
+          The ReaderX team is in charge of making sure that the <b>various parts on a business page</b> (which are designed and built by other teams)
+            <b>are cohesive to allow readers to make decisions and complete tasks efficiently</b>.
+          I worked with another designer, two PMs, and with two developers.
+        </p>
+          <h2>photos as a decision-making tool</h2>
+            <p class="body" style="margin-top: -0.4em;">
+              From user research, we found that users decided to <b>transact with a business heavily based on the business' photos</b>.
+              Transactions can range from partaking in services such as creating a reservation, food delivery, joining a waitlist, requesting a quote, or booking an appointment.
+            </p>
+            <div>
+              <img src="images/yelp-transactions.png" class="body-photo" alt="">
+            </div>
+            <p class="caption">
+              The different transaction types that can be done via the business page—sometimes there can be up to three in a page! Just imagine all the PMs fighting for space above the fold...
+            </p>
+        <h1>problem</h1>
+          <p class="body">
+            A Yelp business page has various entry points for viewing photos, and these entry points are <b>difficult to discover, navigate, and look and behave inconsistently</b>.
+          </p>
+          <p class="quote">
+            "The aim is to design a seamless photo browsing experience from all entry points on the business page."
+          </p>
+          <p class="author">
+          </p>
+          <div>
+            <img src="images/yelp-easteregg.png" class="body-photo" alt="">
+          </div>
+          <p class="caption">
+            What it feels like to find the Yelp photo grid, especially when the only entry points are 1) an easily missed and 2) a very tiny, CTA
+          </p>
+          <h2>anatomy</h2>
+          <p class="body" style="margin-top: -0.4em">
+            There are three entry points for photos,
+            <ol class="roman">
+              <li class="body"><b>Top Business Header</b> is the first and largest entry point for photos (but not necessarily the most obvious one).</li>
+              <li class="body"><b>Media Swipe Bar</b> is a redundant section of photos within the business page, but is the main way to get to the photo grid with its "See All" CTA.</li>
+              <li class="body"><b>Attached Thumbnails</b> are the photos attached to reviews.</li>
+            </ol>
+          </p>
+          <div>
+            <img src="images/yelp-entrypoints.gif" class="body-photo" style="height:300px;" alt="">
+          </div>
+          <p class="caption">
+            The 3 entry points for photos on a business page: I. Top Business Header, II. Media Swipe Bar, III. Attached Thumbnails
+          </p>
+          <p class="body">
+            Moreover, clicking or tapping photo thumbnails from the entry points always goes into <b>low-level browsing</b>, such as going into a <b>photo lightbox</b>.
+            A photo light box contains a lot of unnecessary details when browsing for photos.
+          </p>
+          <p class="body">
+            The user is then also forced to <b>swipe through the photos one by one</b>, instead of being able to scroll through a page with multiple photos.
+            Within the lightbox, the user also has no access to filter the photos by category, using the <b>photo classes</b>, as shown on the photo grid.
+          </p>
+          <div>
+            <img src="images/yelp-lightboxgrid.png" class="body-photo" style="height:300px;" alt="">
+          </div>
+          <p class="caption">
+            Photo lightbox vs. Photo grid
+          </p>
+        <h1>design</h1>
+        <p class="body">
+          Reviewing the issues shown in prod by winter 2018, there was a
+          <ol class="roman">
+            <li class="body"><b>Lack of saliency of the Top Business Header interactions</b>. It's not obvious enough that one can tap or swipe the Top Business Header.</li>
+            <li class="body">Focus on <b>immediate deep browsing vs. prioritizing skimming</b>. Every photo thumbnail tapped leads to a photo lightbox. The photo grid is only accessible by tapping on "See All", at the Media Swipe Bar, which is found below the fold.</li>
+          </ol>
+        </p>
+        <p class="quote">
+          "We can increase the efficiency of photo browsing by immediately directing the user to a richer photo grid."
+        </p>
+        <p class="author">
+          — A summary of how we might increase photo consistency and engagement
+        </p>
+        <div>
+          <img src="images/yelp-ideal.png" class="body-photo" alt="">
+        </div>
+        <p class="caption">
+          Making the photo browsing experience efficient through easy access of photos, categories, and captions
+        </p>
+        <h2>Solution</h2>
+          <p class="body" style="margin-top: -0.4em;">
+            Before starting on any design work, I <b>audited and took inspiration from other apps</b> that showcased photos for a particular business or listing.
+            This included Airbnb, OpenTable, Google Maps, and TripAdvisor. For example, autoscrolling was an animation inspired by Airbnb, and rejigging the grid to keeping photo aspect ratios was inspired by Google Maps.
+          </p>
+          <p class="body">
+
+          </p>
+          <p class="body">
+            In short, the solution entatiled 3 design changes:
+            <ol class="roman">
+              <li class="body"><b>Autoscrolling Top Business Header photos</b>, affording the user to tap or swipe to see more content. This will allow users to quickly find all photos of a business.</li>
+              <li class="body">Any photo thumbnail <b>taps directly to the photo grid first</b>, instead of the photo light box—while still providing context where the tapped photo fits in the photo grid.</li>
+              <li class="body">Replacing the 3 column square grid into a grid that keeps the aspect ratio of the photos, and making them <b>larger to add caption previews</b>.</li>
+            </ol>
+          </p>
+        <h2>I. Autoscrolling at the header</h2>
+          <p class="body">
+            At the first glance, the Top Business Header photo doesn't look swipeable, or even a way to access the grid.
+            In fact, in order to access the grid you must tap on the <b>small, low-opacity pill that shows the index number</b> of the photo you are looking at.
+          </p>
+          <p class="body">
+            By autoscrolling these header photos, the <b>user's attention is quickly captured, while emulating a swiping motion</b>.
+            The CTA was also changed to "See All #_of_photos" (vs. "1 of #_of_photos"), was made bigger, and more opaque.
+          </p>
+          <div>
+            <img src="images/yelp-autoscroll.gif" class="body-photo" style="height:450px;" alt="">
+            <img src="images/yelp-prod-autoscroll.gif" style="height:450px;" alt="">
+          </div>
+          <p class="caption">
+            Top Business Header autoscrolling animation (L: old prototype, R: prod design)
+          </p>
+
+        <h2>II. Focus on Photo Grid</h2>
+          <p class="body" style="margin-top: -0.4em;">
+            As mentioned, any photo thumbnail tapped will direct the user to the photo grid.
+            The photo grid includes <b>photo classes</b>, such as "Food", "Menu", and "Outside".
+            The design elegantly handles this change of context by animating the header photo into a <b>full-width photo on to the grid</b>, and <b>scrolling to its position on the grid</b>.
+            The rest of the photos around it are sized according to their aspect ratios, and preferably, quality scores.
+          </p>
+          <div>
+            <img src="images/yelp-taptogrid.gif" class="body-photo" style="height:450px;" alt="">
+            <img src="images/yelp-prod-photogrid.gif" style="height:450px;" alt="">
+          </div>
+          <p class="caption">
+            Tapping the Top Business Header photo and seeing it on the photo grid
+          </p>
+
+        <h2>III. bigger photos and captions</h2>
+        <p class="body">
+          To achieve a richer photo grid experience, I proposed <b>imposing menu items on the photos</b>.
+          From user research, we found that most users <b>choose what to order</b> (whether in the restaurant or for delivery) based on photos.*
+          Therefore, showing the menu item associated with the photo would be very helpful.
+        </p>
+        <div>
+          <img src="images/yelp-photogrid.gif" class="body-photo" style="height:450px;" alt="">
+          <img src="images/yelp-prod-photogrid.gif" style="height:450px;" alt="">
+        </div>
+        <p class="caption">
+          L: Initial design of photo grid with menu item tags, and ads. R: Prod design using photo captions
+        </p>
+        <p class="body">
+          <i>*This inspired a feature that was built in parallel called Popular Dishes, which showcase a food business' popular menu items mentioned based on photo captions.</i>
+        </p>
+
+
+      <h1>results</h1>
+      <p class="body">
+        Overall, redirecting to the grid and having a clearer CTA for seeing all photos on the Top Business Header <b>increased photo views</b>.
+      </p>
+      <p class="body">
+        The autoscrolling feature absorbed another "slideshow feature," which was part of an <b>incentive for business owners to upgrade plans</b>.
+        On September 2018, <a href="https://www.yelpblog.com/2018/09/showcase-your-best-photos-with-the-mobile-slideshow-feature?fbclid=IwAR18pKShxSwMkD8OW2dMVi3q2LVt3XjTfNWTn_sczp_q0sMPfE9epf4A_8g" target="_blank" class="body">Yelp released a blog post about this paid feature</a>, showcasing my original designs.
+      </p>
+      <p class="quote">
+        "People who view business pages with the feature see up to 30% more photos and engage with the business page more often."
+      </p>
+      <p class="author">
+        — <a href="https://www.yelpblog.com/2018/09/showcase-your-best-photos-with-the-mobile-slideshow-feature?fbclid=IwAR18pKShxSwMkD8OW2dMVi3q2LVt3XjTfNWTn_sczp_q0sMPfE9epf4A_8g" target="_blank" class="body">Lindsay Goyne, Product Manager,Yelp</a>
+      </p>
+      <p class="body">
+        The grid improvements on the other hand were compromised for <b>cheaper engineering</b>, making the photos available only in two sizes—a <b>square</b> that takes up half the screen or a <b>full-width rectangle</b>.
+        Mentioning or tagging menu items on the photos themselves were not implemented yet, but captions were.
+      </p>
+      <p class="body">
+        Despite these two tradeoffs to implement the design in 2-3 weeks with two developers, the essence of what makes browsing photos much more efficient—
+        <b>prioritizing skimming</b> and <b>showing just the right amoount of information at-a-glance</b>—were achieved.
+      </p>
+      <h1>other</h1>
+        <p class="body">
+          I designed a lot of other <b>future concepts</b> for the <b>photo browsing experience</b>, and the <b>Yelp business page</b> overall.
+          Here are some concepts I prototyped and inspired some of the new features Yelp has been rolling out.
+        </p>
+        <h2>media swipe bar improvements</h2>
+          <p class="body">
+            The Media Swipe Bar is a feature within the business page <b>where most users accessed photos</b> (before my redesign).
+            To reduce redundancy with the Top Business Header, I leveraged this section as a way to <b>enter the photo grid's photo classes</b>.
+            Photo classes are only discoverable on the grid—but with the repurposed Media Swipe Bar, users can discover that they can filter photos on Yelp as well.
+          </p>
+          <div>
+            <img src="images/yelp-mediaswipe.gif" class="body-photo" style="height: 450px; padding-left:8em;" alt="">
+          </div>
+          <p class="caption">
+            Concept design for Media Swipe Bar (in a reimagined Yelp iOS Styleguide, not by Yelp)
+          </p>
+
+
+        <h2>Business page improvements</h2>
+        <p class="body" style="margin-top: -0.4em;">
+          I introduced a lot of other improvements on the business page as well, such as <b>information hierarchy</b>, contribution or <b>review entry points</b>, and drastic <b>iOS and Android styleguide changes</b>, to name a few.
+        </p>
+        <p class="body">
+          Below was a fun exercise I did trying to revamp the Yelp business page from scratch, including all the required components a business page must have (shaking my fist at you, ads).
+        </p>
+        <div>
+          <img src="images/yelp-bizE.gif" class="body-photo" style="height: 450px; padding-left:8em;" alt="">
+        </div>
+        <p class="caption">
+          Concept design for Yelp business page (in a reimagined Yelp iOS Styleguide, not by Yelp)
+        </p>
+
+      <h1>thanks to</h1>
+        <p class="body">
+          Simon Smith my manager, for taking Yelp's design team by a storm, giver of waffles, and showing me the best Filipino takeout near work!
+          My product managers, Lindsay Goyne, Marshall Yuan, Matt Geddie, and Young Yuk for giving me my first experience on working with PMs.
+
+        </p>
+        <p class="body">
+        </p>
+        <p class="body">
+          The Yelp product design team, for their enthusiasm, entertaining both my design (and fashion) critiques, and having my back at the <a href="https://www.yelp.ca/biz/the-caf%C3%A9-san-francisco-7" target="_blank" class="body">The Café</a>.</p>
+        <p class="body">
+          And especially to <b>Sijia Wang</b>, my mentor, and John Salaveria, my co-intern—for always believing in me, and taking me out of my Mission home from time to time.
+        </p>
+          <br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+
+      <!-- contact info -->
+      <div id="contact">
+          <table style="width:100%">
+            <tr>
+              <td class="contact-title">write</td>
+              <td class="contact-item">
+                <a href="mailto:joannemagbitang@gmail.com?Subject=La%20Croix%20rhymes%20with%20enjoy" target="_top" class="navigation">joannemagbitang@gmail.com</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="contact-title">connect</td>
+              <td class="contact-item">
+                <a href="https://www.linkedin.com/in/joanne-magbitang" target="_blank" class="navigation">in/joanne-magbitang</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="contact-title">listen</td>
+              <td class="contact-item">
+                <a href="https://open.spotify.com/user/saintpotter?si=EjcXq1LDQMGodg6s1ki6TA" target="_blank" class="navigation">spotify/saintpotter</a>
+              </td>
+            </tr>
+          </table>
+      </div>
+
+    </div>
+  </body>
+</html>

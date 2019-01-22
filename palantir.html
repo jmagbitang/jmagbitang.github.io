@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sumana:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div id="title">
+        <a href="home.html" class="title">joanne<br>magbitang</a>
+      </div>
+
+      <div id="navigation">
+        <ul style="list-style: none;">
+          <!-- design projects -->
+        <li class="nav-title" style="margin-top: -3em;">design</li>
+        <li class="nav-item-active">
+          <a href="palantir.html" class="navigation navigation-active ">palantir</a>
+        </li>
+        <li class="nav-item">
+          <a href="yelp.html" class="navigation navigation-active ">yelp</a>
+        </li>
+        <li class="nav-item">
+          <a href="wealthsimple.html" class="navigation navigation-active ">wealthsimple</a>
+        </li>
+        <li class="nav-item">
+          <a href="hackthenorth.html" class="navigation navigation-active ">hack the north</a>
+        </li>
+
+        <!-- writing -->
+        <li class="nav-title-inactive">writing</li>
+        <li class="nav-item">
+          <a href="https://medium.com/yelp-design/roll-call-intern-edition-joanne-john-ac9b076a67cb" target="_blank" class="navigation-inactive nav-item-inactive">yelp: roll call</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" target="_blank" class="navigation-inactive nav-item-inactive">htn: branding</a>
+        </li>
+
+        <!-- photography -->
+        <li class="nav-title-inactive">photography</li>
+        <li class="nav-item">
+          <a href="#" class="navigation-inactive nav-item-inactive">yashica t3</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="navigation-inactive nav-item-inactive">photo sets</a>
+        </li>
+
+        <!-- CV -->
+        <li class="nav-title-inactive">CV</li>
+        <li class="nav-item">
+          <a href="#" class="navigation-inactive nav-item-inactive">online</a>
+        </li>
+        <li class="nav-item">
+          <a href="images/Resume_JoanneMagbitang_2018.pdf" target="_blank" class="navigation-inactive nav-item-inactive">pdf</a>
+        </li>
+
+        </ul>
+      </div>
+
+      <!-- header photo -->
+      <div class="header-photo">
+        <p class="date">fall 18, new york city → stockholm → london → palo alto → washington</p>
+        <img class="height100" src="images/palantir-main.png" alt="it me">
+      </div>
+
+      <!-- intro text -->
+      <div class="bodytext">
+        <p class="body" style="margin-top: -1em;">
+           I extensively travelled for 4 months as a product design intern at Palantir, working closely with clients and coworkers overseas to quickly iterate and ship features on <a href="https://www.palantir.com/palantir-gotham/modules/" target="_blank" class="body">Dossier and Gaia</a>, our <b>collaborative report-writing</b> and <b>map modules</b>, respectively.
+        </p>
+        <p class="body">
+          <i >*Most of my work are NDA-protected. If you want to learn more, <a href="mailto:joannemagbitang@gmail.com?Subject=Palantir%20design%20work%20inquiry%20" target="_top" class="body">shoot me a message</a>.</i><br>
+        </p>
+        <h1>the suite</h1>
+        <p class="body">
+          I worked on Palantir Gotham (PG), which houses a suite of analytic products that are focused on a bottom-up approach to answering big data questions — making PG a popular platform for <b>investigatory workflows</b>.
+          The different <a href="https://www.palantir.com/palantir-gotham/platform-features/" target="_blank" class="body">features</a> and modules included in PG output their own <b>analytical pieces</b>, such as objects, maps, tables, documents, and graphs.
+        </p>
+        <svg width="600" height="100" style="padding-left: 12.7em;">
+           <rect width="500" height="100" style="fill:#ddd;" />
+           <!-- Dossier homepage -->
+        </svg>
+        <p class="caption">
+          Specific questions or points of interest guide the analysis (vs. top-down analysis)
+        </p>
+        <!-- <p class="body">
+          *insert image about question - object - network (graph) - map - dossier!
+        </p> -->
+
+      <!-- DOSSIER -->
+        <h1>dossier</h1>
+          <p class="body">
+            Most of our PG clients delivered formal reports, which were heavily audited before being published.
+            Dossier aimed to bridge this gap between <b>building analytical pieces in PG and augmenting them with written, actionable reports</b>.
+          </p>
+          <svg width="600" height="100" style="padding-left: 12.7em;">
+             <rect width="500" height="100" style="fill:#ddd;" />
+             <!-- Dossier homepage -->
+          </svg>
+          <p class="caption">
+            Dossier providing a frictionless experience from analysis to hypothesis building — no Gandalf warnings on this bridge...
+          </p>
+          <p class="body">
+            I worked with a team comprised of a tech lead, two developers, and my mentor and product manager, part-time.
+          </p>
+
+          <h2>anatomy</h2>
+          <p class="body" style="margin-top: -0.4em">
+            Dossier has a <b>homepage</b> which includes all the dossiers available for the user's investigation, along with its metadata (such as <b>document labels</b>—which I also designed, user tested, and shipped with one of the developers on my team!)
+          </p>
+          <svg width="600" height="100" style="padding-left: 12.7em;">
+             <rect width="500" height="100" style="fill:#ddd;" />
+             <!-- Dossier homepage -->
+          </svg>
+          <p class="caption">
+            Dossier homepage, filtering by document labels
+          </p>
+          <p class="body">
+            The actual documents are called <b>dossiers</b>, complete with classification and permission settings, which dictate who and what pieces can enter the dossier.
+          </p>
+
+          <h2>main challenges</h2>
+          <ol class="roman">
+            <li class="body">Dossier was difficult to integrate within our users' workflows due to it falling short on <b>report-formatting</b>, such as citations.</li>
+            <li class="body">A huge lack of consistency and configurability with <b>inserting various pieces within PG</b> (networks, graphs, objects) into a Dossier.</li>
+          </ol>
+          <svg width="600" height="100" style="padding-left: 12.7em;">
+             <rect width="500" height="100" style="fill:#ddd;" />
+             <!-- Dossier homepage -->
+          </svg>
+          <p class="caption">
+            Shit was hard!
+          </p>
+
+          <!-- SOURCING -->
+          <h2>I. sourcing and citations</h2>
+            <p class="body" style="margin-top: -0.4em">
+              Collaborating closely with our early adopters, I focused on designing various low-hanging fruit features for easier adoption of Dossier in their day-to-day workflows.
+              This included focusing on automating tasks such as citations.
+            </p>
+            <p class="quote">“We're looking for automation: getting properties and their
+  sources, appendices—and whatever else is the same every single time—into Word.”
+            </p>
+            <p class="author">
+              — Client on the barriers of adopting Dossier
+            </p>
+            <p class="body">
+              As formal report writers, our clients needed a way to easily source all their pieces in PG—and sometimes all the way to the property- and value- level of a single object.
+              These reports could include up to <b>more than 1000 citations, which they manually format by copy-pasting</b>.
+            </p>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+               <!-- Dossier homepage -->
+            </svg>
+            <p class="caption">
+              <!-- before/after thing/solution in concept -->
+              Their day-to-day workflow, and how Dossier will fit as a frictionless interstitial
+            </p>
+            <br>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+               <!-- Things that can be cited, and in what way -->
+            </svg>
+            <p class="caption">
+              Consolidating all sourcing and citation needs from various client interviews
+              <!-- how do footnotes + prop picking work together, EXPORT end goal -->
+            </p>
+            <br>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+               <!-- Property Picking -->
+            </svg>
+            <p class="caption">
+              An example of configuring sourcing and citations at export at property- and value-level
+            </p>
+
+            <p class="body">
+              The end result was an early adopter group going from being testers of our product to becoming champions of Dossier in their organization.
+              With formatting and automation tasks out of the way, users were able to <b>seamlessly do their report-writing in Dossier and minimally format it in Word</b> for final delivery.
+            </p>
+
+          <!-- INSERT -->
+          <h2>II. insert commands</h2>
+            <p class="body" style="margin-top: -0.4em">
+              To fully make Dossier a canvas of analytical pieces and hypotheses, we needed to improve its ability to tie in together the different outputs of features and modules within PG.
+            </p>
+            <p class="quote">“Collaboration can be encouraged by Dossier, and I'm a big
+believer in turning PG into an institutional knowledge base.”</p>
+            <p class="author">
+              — Client on adopting Dossier to keep reports and collaborations within PG
+            </p>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+               <!-- conceptually, what we want (discoverability!) -->
+            </svg>
+            <p class="caption">
+              Ideally, we want users to know that they can insert these PG pieces into a Dossier
+            </p>
+            <p class="body">
+              This problem obviously encompassed cross-platform discoverability, but for easier developer hand-off and adoption from stakeholders, I decided to scope the project into various versions.
+              I started with improving <b>prompts and discoverability</b> within a dossier.
+            </p>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+               <!-- sad sad audit! -->
+            </svg>
+            <p class="caption">
+              Audit showing inconsistencies of inserting PG pieces into Dossier
+            </p>
+            <p class="body">
+              To consolidate all these workflows and shortcuts, I created a flowchart for all possible piece insertions and the different ways they can be inserted into a dossier.
+              The result was, <br>
+              <ol class="roman">
+                <li class="body">Aiming for a robust insert menu that allowed for both <b>freeform and focused search</b> for all pieces and piece types that can be inserted in Dossier.</li>
+                <li class="body">Adding <b>contextual prompts</b> after the insert command, @ so the user knows where the insert menu is querying from.</li>
+                <li class="body">Keeping <b>visual consistency</b> between different insert menu modes (especially if a specific piece type filter was chosen).</li>
+              </ol>
+            </p>
+
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+               <!-- versioning work, maybe show the different features and why roll this one out first then this etc -->
+            </svg>
+            <p class="caption">
+              How the work was versioned, keeping development effort and user adjustment low
+            </p>
+            <br>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+              <!-- v0 i think -->
+            </svg>
+            <p class="caption">
+              Changing prompts, adding drag and drop knowledge piece at the beginnning
+            </p>
+            <br>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+              <!-- image -->
+            </svg>
+            <p class="caption">
+              Consolidating the insert menu items, and building the foundation for newer items
+            </p>
+            <br>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+              <!-- modal vs dossier/shared graph/object filter -->
+            </svg>
+            <p class="caption">
+              No more inconsistent modals, search and filter within the insert menu for different piece types
+            </p>
+            <br>
+            <svg width="600" height="100" style="padding-left: 12.7em;">
+               <rect width="500" height="100" style="fill:#ddd;" />
+              <!-- image -->
+            </svg>
+            <p class="caption">
+              Final form, a freeform search
+            </p>
+            <p class="body">
+              Due to more urgent features (such as sourcing and citation), this work was postponed.
+              Nonetheless this was my first project at Palantir, and I'm satisfied to have decomposed a systematic design problem so early on.
+            </p>
+
+
+      <!-- GAIA -->
+        <h1>gaia</h1>
+        <p class="body">
+          Lastly, I worked on Gaia (maps) for my last few weeks at Palantir, where I researched and created early designs for extending our <b>map visualization features</b>.
+        </p>
+          <h2>map visualizations</h2>
+          <p class="body" style="margin-top: -0.4em">
+            Working on another large analytical artifact, I improved maps by putting together new map visualizations for our Gaia module.
+          </p>
+          <h2>presentation vs. analysis</h2>
+          <p class="body" style="margin-top: -0.4em">
+            Working with various clients who heavily use our map visualization features, an important lesson I learned were the two main uses of map visualizations — presentation and analysis.
+            <ol class="roman">
+              <li class="body"><b>Presentation</b> focused on seeing <b>trends at a glance</b> of a map visualization. These visualizations often involved visuals that are hard to read granularly, such as gradients.</li>
+              <li class="body"><b>Analysis</b> focused on hunting for <b>specific data points or values</b>. These encompassed visualizations with points, distinct shapes and/or lines.</li>
+            </ol>
+          </p>
+          <svg width="600" height="100" style="padding-left: 12.7em;">
+             <rect width="500" height="100" style="fill:#ddd;" />
+            <!-- image of presentation vs analysis maps -->
+          </svg>
+          <p class="caption">
+            Contrasting presentation and analytic map visualizations
+          </p>
+
+          <h2>visual math</h2>
+          <p class="body" style="margin-top: -0.4em">
+            I focused on presentation-type map visualizations, dealing with multiple colours and varying intensities.
+            The biggest challenge with controlling these visualizations is <b>knowing what the variables are, and how they affect your visualization</b>.
+          </p>
+          <p class="body">
+            To start off, these visualizations often compare densities of something. A frequency. A point's property value.
+            When densities are in play, users would want to tend to focus on clusters that show extreme low or high.
+            But there is a cost to beauty. These polished gradients and vibrant clusters are controlled by variables that change based on <b>statistical distribution equations</b>—which smooth your gradients and weigh your clusters accordingly.
+          </p>
+          <svg width="600" height="100" style="padding-left: 12.7em;">
+             <rect width="500" height="100" style="fill:#ddd;" />
+            <!-- analogies of map and effects to heatmap; intensity, colour stops, radii -->
+          </svg>
+          <p class="caption">
+            You thought teaching math was hard. Try making someone *implicitly* understand the math.
+          </p>
+          <p class="body">
+            Another improvement made was the control of colour.
+            Colour stops are an important feature when fine-tuning the semantics of map visualization.
+            This also allowed for the user to easily map what values the colours corresponded to without having to provide multiple fall-off points, decluttering the UI.
+          </p>
+          <svg width="600" height="100" style="padding-left: 12.7em;">
+             <rect width="500" height="100" style="fill:#ddd;" />
+            <!-- colour stops vs min/max -->
+          </svg>
+          <p class="caption">
+            Colour stops to indicate fall-off values
+          </p>
+          <p class="body">
+            Moreover, I researched on more accessible palettes (read: I will never stop playing with and raving about <a href="https://www.mrao.cam.ac.uk/~dag/CUBEHELIX/cubetry.html" target="_blank" class="body">Cubehelix</a>)
+            to provide out of the box for our users.
+            My palettes of choice became Cubehelix for print, Viridis for digital, and ColorBrewery for choropleths (especially for qualitiative and divergent sets).
+          </p>
+          <svg width="600" height="100" style="padding-left: 12.7em;">
+             <rect width="500" height="100" style="fill:#ddd;" />
+             <!-- colour palettes -->
+          </svg>
+          <p class="caption">
+            Credits: source, source...
+          </p>
+          <br>
+          <svg width="600" height="100" style="padding-left: 12.7em;">
+             <rect width="500" height="100" style="fill:#ddd;" />
+             <!-- final image??? idk? -->
+          </svg>
+          <p class="caption">
+            Improved mental model of heatmap controls
+          </p>
+          <p class="body">
+            This was a very fun project to end off my internship, and having colocated with a new team in Washington, D.C.
+            It was exciting to come back to my data visualization roots, combining statistics and visual design knowledge in a product.
+            Moreover, I was able to experience more facets of the PG product, and Palantir as an organization.
+          </p>
+
+        <!-- special thanks -->
+        <h1>thanks to</h1>
+        <p class="body">
+          Ashley Einspahr, Andy Elder, Alexis Le Dantec, Ryan Beiermeister, and the PG designers for your guidance. Rhys Brett-Bowen and Paul Thoren for the great jams and your developer chops.
+        </p>
+        <p class="body">
+          And <b>Kevin Ng</b>, my mentor, work best friend, and introversion coach.<br>
+        </p>
+        <br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+
+
+
+
+      <!-- contact info -->
+      <div id="contact">
+          <table style="width:100%">
+            <tr>
+              <td class="contact-title">write</td>
+              <td class="contact-item">
+                <a href="mailto:joannemagbitang@gmail.com?Subject=La%20Croix%20rhymes%20with%20enjoy" target="_top" class="navigation">joannemagbitang@gmail.com</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="contact-title">connect</td>
+              <td class="contact-item">
+                <a href="https://www.linkedin.com/in/joanne-magbitang" target="_blank" class="navigation">in/joanne-magbitang</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="contact-title">listen</td>
+              <td class="contact-item">
+                <a href="https://open.spotify.com/user/saintpotter?si=EjcXq1LDQMGodg6s1ki6TA" target="_blank" class="navigation">spotify/saintpotter</a>
+              </td>
+            </tr>
+          </table>
+      </div>
+
+    </div>
+  </body>
+</html>
