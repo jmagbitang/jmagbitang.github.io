@@ -45,7 +45,7 @@ p.intro {
   padding-left: 16em;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 768px) {
   p.intro {
     font-size: 0.4em;
   }
