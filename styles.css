@@ -319,4 +319,8 @@ a:active {
   padding-left: 1.2em;
 }
 
+img {
+  pointer-events: none;
+}
+
 </style>
