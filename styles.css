@@ -204,6 +204,11 @@ a.title:visited {
     text-decoration: none;
 }
 
+a.navigation:visited {
+    color: black;
+    text-decoration: none;
+}
+
 a.navigation-active:visited {
     color: black;
     text-decoration: none;
