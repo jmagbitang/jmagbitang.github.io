@@ -194,8 +194,11 @@ a.nav-item-inactive:link {
 
 a.body:link {
     color: black;
+    /* border-bottom: 5px solid #eee;
+    padding: 0 0 1px; */
     text-decoration: underline;
-    text-decoration-color: #ddd;
+    text-decoration-skip: ink;
+    text-decoration-color: black;
 }
 
 /* visited link */
@@ -242,7 +245,8 @@ a.navigation-inactive:hover {
 }
 
 a.body:hover {
-    color: black;
+    color: #7e7e7e;
+    text-decoration-color: #7e7e7e;
 }
 
 /* selected link */
